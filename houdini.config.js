@@ -3,7 +3,7 @@
 /** @type {import('houdini').ConfigFile} */
 const config = {
     "watchSchema": {
-        "url": "http://localhost:8081/query"
+        "url": "http://188.40.55.11:8081/query"
     },
     "plugins": {
         "houdini-svelte": {}
