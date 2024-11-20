@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+    import AppNavbar from "$lib/components/AppNavbar/AppNavbar.svelte";
+    import BlogList from "$lib/components/Blog/BlogList.svelte";
+
+    /* @type { import('./$houdini').PageData } */
+    export let data
+
+    $: ({BlogListQuery} = data)
+</script>
+
+<AppNavbar/>
+<BlogList bloglist={$BlogListQuery}/>
